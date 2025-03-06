@@ -46,7 +46,7 @@ app.post('/create-payment', async (req, res) => {
         const response = await axios.post(
             `${INSTAMOJO_BASE_URL}/payment-requests/`,
             {
-                purpose: `Hackathon Team Registration: ${teamName}`,
+                purpose: `Sparks2025 grand challenge Team Registration: ${teamName}`,
                 amount: amount,
                 buyer_name: teamName,
                 email: email,
